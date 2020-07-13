@@ -1,0 +1,140 @@
+/*
+* Custom Yoga Avani styles
+*/
+
+body {
+    font-family: 'Arimo', sans-serif;
+}
+h1 {
+    font-family: 'Arimo', sans-serif;
+}
+
+h1.yoga-sub-heading {
+    width: 100%;
+    text-align: center;
+    padding-top: 2em;
+}
+
+h2.yoga-sub-heading {
+    width: 100%;
+    text-align: center;
+}
+
+ul.nav {
+    margin-top: 1em;
+}
+
+ul.nav li a {
+    transition: 0.4s;
+    margin: 1em 1em;
+    padding: 0 1em;
+    text-decoration: none;
+}
+
+ul.nav li a.home {
+    background-color: #2aabd2;
+    border-radius: 2em;
+    color: #ffffff;
+    padding: 1em 1em;
+    text-decoration: none;
+}
+
+ul.nav li a:hover {
+    background-color: #2aabd2;
+    border-radius: 2em;
+    color: #ffffff;
+    padding: 1em 1em;
+}
+
+ul.nav li a.btn {
+    margin: 0.1em 0.1em;
+    padding: 0 0.1em;
+    text-decoration: none;
+}
+
+section.content {
+    width: 100%;
+    min-height: 500px;
+}
+
+.parallax {
+    /* background image */
+
+    /* height */
+    height: 600px;
+
+    /* Parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.return-home {
+    transition: 0.4s;
+    position: relative;
+    float: right;
+    border-radius: 50%;
+    font-size: 24px;
+    width: 56px;
+    height: 56px;
+    color: #ffffff;
+    background-color: #2aabd2;
+}
+
+.return-home:hover {
+    background-color: #0275d8;
+}
+
+#home {
+    color: #ffffff;
+    background-color: #d0e9c6;
+    background-image: url("../images/regina_background_fade2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 700px;
+    padding-top: 2em;
+}
+
+#yoga {
+
+}
+
+#breathing {
+    background-color: #d0e9c6;
+    background-image: url("../images/breathing_background_fade.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#corporate {
+    color: #ffffff;
+    background-color: #e6e6e6;
+    background-image: url("../images/sf-corporate-background.jpg");
+}
+
+#products {
+
+}
+
+#guidance {
+    background-color: #d0e9c6;
+}
+
+#testimonials {
+    background-color: #ffffff;
+    background-image: url("../images/testimonials_background_fade.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#about {
+    background-color: #d0e9c6;
+    background-image: url("../images/about_background_fade.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#yogaHeroImage {
+    width: 100%;
+}
