@@ -121,6 +121,10 @@ section.content {
     background-color: #d0e9c6;
 }
 
+#classes {
+    text-align: center;
+}
+
 #testimonials {
     background-color: #ffffff;
     background-image: url("../images/testimonials_background_fade.jpg");
