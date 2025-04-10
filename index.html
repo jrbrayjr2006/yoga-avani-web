@@ -84,8 +84,20 @@
     </section>
 
     <section id="services">
-        <h2>Our Services</h2>
-        <p>We offer a variety of yoga classes and wellness programs.</p>
+        <!-- Feature Container -->
+        <div class="relative container flex flex-col max-w-6xl mx-auto my-32 px-6 text-gray-900 md:flex-row md:px-0">
+            <!-- Image Container -->
+            <img src="images/sf-corporate-background.jpg" alt="Services Image">
+            <!-- Text Container -->
+            <div class="top-20 pl-0 bg-white md:absolute md:left-0 md:py-20 md:pl-20">
+                <h2 class="max-w-lg mt-10 mb-6 text-4xl font-sans text-center text-gray-900 uppercase md:text-5xl md:mt-0 md:text-left">
+                    Our Services
+                </h2>
+                <p class="max-w-md text-center md:text-left">
+                    We offer a variety of yoga classes and wellness programs.
+                </p>
+            </div>
+        </div>
     </section>
 
     <section id="events">
@@ -97,9 +109,77 @@
         <p>If you have any questions, feel free to reach out!</p>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Yoga Avani. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-black">
+        <!-- Main Footer Container -->
+        <div class="container max-w-6xl py-10 mx-auto">
+            <!-- Footer Flex Container -->
+            <div class="flex flex-col items-center mb-8 space-y-6 md:flex-row md:space-y-0 md:justify-between md:items-start">
+                <!-- Menu and Logo Container -->
+                <div class="flex flex-col items-center space-y-8 md:items-start md:space-y-4">
+                    <!-- Logo-->
+                    <div class="h-8">
+                        <!-- <img src="images/logo.svg" alt="" class="w-44 md:ml-3"> -->
+                    </div>
+                    <!-- Menu -->
+                    <div class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6 md:ml-3">
+                        <!-- Item 1 -->
+                        <div class="h-10 group">
+                            <a href="#" class="hover:text-gray-300">About</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="h-10 group">
+                            <a href="#" class="hover:text-gray-300">Services</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="h-10 group">
+                            <a href="#" class="hover:text-gray-300">Events</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="h-10 group">
+                            <a href="#" class="hover:text-gray-300">Contact</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Social and Copy Container -->
+                <div class="flex flex-col items-start justify-between space-y-4 text-gray-500">
+                    <!-- Social Icons Container -->
+                    <div class="flex items-center justify-center space-x-4 mx-auto md:justify-end md:mx-0">
+                        <!-- Icon 1 -->
+                        <div class="h-8 group">
+                            <a href="#">
+                                <img src="images/icon-facebook.svg" alt="Facebook Icon" class="h-6">
+                            </a>
+                        </div>
+                        <!-- Icon 2 -->
+                        <div class="h-8 group">
+                            <a href="#">
+                                <img src="images/icon-twitter.svg" alt="Twitter Icon" class="h-6">
+                            </a>
+                        </div>
+                        <!-- Icon 3 -->
+                        <div class="h-8 group">
+                            <a href="#">
+                                <img src="images/icon-pinterest.svg" alt="Pinterest Icon" class="h-6">
+                            </a>
+                        </div>
+                        <!-- Icon 4 -->
+                        <div class="h-8 group">
+                            <a href="#">
+                                <img src="images/icon-instagram.svg" alt="Instagram Icon" class="h-6">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Copy Container -->
+                    <div class="font-bold">
+                        &copy; 2025 Yoga Avani. All rights reserved.
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
