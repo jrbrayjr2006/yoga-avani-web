@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+    --breakpoint-sm: 480px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1020px;
+    --breakpoint-xl: 1440px;
+    --breakpoint-2xl: 1920px;
+    --breakpoint-3xl: 2560px;
+
+}
+
+#hero {
+    background: url('../images/desktop/image-hero.jpg') no-repeat center center/cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width: 576px) {
+    #hero {
+        background: url('../images/mobile-image-hero.jpg') center center/cover;
+        background-position: center;
+    }
+}
+
+/* Hamburger Menu */
+
+.hamburger-traditional {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top-traditional, .hamburger-middle-traditional, .hamburger-bottom-traditional {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s ease;
+}
+
+.hamburger-middle-traditional {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom-traditional {
+    transform: translateY(14px);
+}
+
+.open-traditional {
+    transform: rotate(90deg);
+}
+
+.open-traditional .hamburger-top-traditional {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open-traditional .hamburger-middle-traditional {
+    display: none;
+}
+
+.open-traditional .hamburger-bottom-traditional {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}

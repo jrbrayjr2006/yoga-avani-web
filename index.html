@@ -4,256 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1;">
     <title>Yoga Avani - Home</title>
-    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/scrolling-nav.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/yogaavani.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
-
-    <!-- Latest compiled and minified CSS --
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme --
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    -->
 </head>
 <body id="page-yoga-top">
-<header>
-    <div class="container">
-        <!-- header content goes here -->
-        <div class="row">
-            <div class="col-md-10">
-                <nav class="navbar-toggler-left">
-                    <ul class="nav nav-pills nav-justified">
-                        <li><a href="#home" class="home">Home</a></li>
-                        <li><a href="#yoga" class="page-scroll">Yoga</a></li>
-                        <li><a href="#breathing" class="page-scroll">Breathing</a></li>
-                        <li><a href="#classes" class="page-scroll">Classes</a></li>
-                        <li><a href="#testimonials" class="page-scroll">Testimonials</a></li>
-                        <li><a href="#about" class="page-scroll">About</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-md-2">
-                <nav class="navbar-toggler-right">
-                    <ul class="nav nav-pills">
-                        <li><a href="https://twitter.com/yogaavani" target="_blank" class="btn btn-social-icon btn-twitter"><span class="fa fa-twitter"></span></a></li>
-                        <li><a href="https://www.facebook.com/yogaavani" target="_blank" class="btn btn-social-icon btn-facebook"><span class="fa fa-facebook"></span></a></li>
-                        <li><a href="https://instagram.com/" target="_blank" class="btn btn-social-icon btn-instagram"><span class="fa fa-instagram"></span></a></li>
-                        <li><a href="https://pinterest.com/" target="_blank" class="btn btn-social-icon btn-pinterest"><span class="fa fa-pinterest"></span></a></li>
-                        <li>
-                            <audio id="5-minute-meditation" preload="none">
-                                <source src="audio/5minute_meditation.mp3" type="audio/mpeg">
-                                <source src="audio/5minute_meditation.ogg" type="audio/ogg">
-                            </audio>
-                            <a href="#" class="btn" id="audioControl"><span id="audioIcon" class="glyphicon glyphicon-volume-up"></span></a>
-                            <input id="audioPlayerFlag" type="hidden" value="pause" />
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-</header>
-
-
-    <!-- body content goes here -->
-
-    <section id="home" class="content">
-        <!-- Home Section -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="yoga-sub-heading">The Mind, Body &amp; Breath</h1>
-                    <h1 class="yoga-sub-heading">Create <br /> Your Own <br /> Possibilities</h1>
+    <section id="hero">
+        <!-- Hero Container -->
+        <div class="container max-w-6xl mx-auto px-6 py-12 md:px-0">
+            <!-- Logo/Menu Container -->
+            <nav class="flex items-center justify-between font-bold text-slate-400">
+                <!-- Logo -->
+                <img src="images/logo.png" alt="Logo Image" class="w-25 h-25 rounded-full">
+                <!-- Menu -->
+                <div class="hidden h-10 font-alata md:flex md:space-x-8">
+                    <div class="group">
+                        <a href="#home" class="hover:text-slate-800">Home</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#about" class="hover:text-slate-800">About</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#services" class="hover:text-slate-800">Services</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#events" class="hover:text-slate-800">Events</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#contact" class="hover:text-slate-800">Contact</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
                 </div>
+                <!-- Hamburger Button here -->
+                <div class="md:hidden">
+                    <button id="menu-btn" type="button" class="z-40 block hamburger-traditional md:hidden focus:outline-none">
+                        <span class="hamburger-top-traditional"></span>
+                        <span class="hamburger-middle-traditional"></span>
+                        <span class="hamburger-bottom-traditional"></span>
+                    </button>
+                </div>
+            </nav>
+            <!-- Mobile Menu here -->
+            <div id="menu" class="absolute top-0 bottom-0 left-0 flex flex-col self-end hidden w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black">
+                <a href="#home" class="hover:text-green-500">Home</a>
+                <a href="#about" class="hover:text-green-500">About</a>
+                <a href="#services" class="hover:text-green-500">Services</a>
+                <a href="#events" class="hover:text-green-500">Events</a>
+                <a href="#contact" class="hover:text-green-500">Contact</a>
             </div>
-        </div>
-    </section>
-
-    <section id="yoga" class="content">
-        <!--  -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="yoga-sub-heading">Yoga</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>
-                        The Sanskrit word yoga has the literal meaning of <strong>"yoke"</strong>, from a root yuj meaning to join, to unite, or to attach.  It is a union between physical, mental and spiritual discipline.  These disciplines are between the mind and body; mind, body and breathe; Higher Power and soul; spirit, mind and body, etc.  Yoga is any spiritual path that may lead from suffering and the circle of reincarnations to liberation.  Yoga Avani teaches Ashtanga, Hatha, and Power Vinyasa Flow yoga.
-                    </p>
-                    <p>
-                        <strong>Ashtanga Yoga</strong> is the eightfold spiritual path to obtain the control of the mind, the state of samadhi (spiritual state of consciousness) and eventually liberation.  The following eight angas (limbs) are the stages of the spiritual path:  Yama, Niyama, Asana, Pranayama, Pratayahara, Dharana, Dhyana and Samadhi.
-                    </p>
-                    <p>
-                        <strong>Hatha Yoga</strong> is the yoga of "effort" and part of Raja Yoga, the yoga of the "mind".
-                    </p>
-                    <p>
-                        <strong>Vinyasa Yoga</strong> is the linking of breath-synchronized body movements used to transition between sustained postures.
-                    </p>
-                    <p>
-                        There are many yoga styles of yoga, all acceptable to lead to the same goal of liberation.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <img src="images/yoga_hero.png" alt="Yoga Hero" />
-                </div>
+            
+            <div class="max-w-lg mt-32 mb-32 p4 font-sans text-4xl text-slate-400 uppercase border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl">
+                Your journey to wellness begins here.
             </div>
         </div>
     </section>
 
-    <section id="breathing" class="content">
-        <!--  -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="yoga-sub-heading">Breathing</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6"></div>
-                <div class="col-md-6">
-                    <p><strong>Pranayama</strong> is a Sanskrit word meaning "extension of the prana or breath" or more accurately, "extension of the life force".  The word is composed of two Sanskrit words, Prāna, life force (the breath) and "ayāma", to extend or draw out. <strong>Pranayama Yoga</strong> is the art of breathing control.  It calms the mind; lowers the blood pressure; eases migraines; improves cardiac functions; helps with all ailments, improves respiratory (asthma) issues; energizes the mind; overcomes sleepiness and laziness; improves lung capacity; relieves stress & anxiety; prepares for meditation; balances the body, mind and breath, etc. </p>
-                    <p>Yoga Avani practices the following Pranayama techniques on a regular basis:</p>
-                    <ul>
-                        <li>Kapalbhati “Shining Skull”</li>
-                        <li>Nadi Suddi “Energy Channel Purification”</li>
-                        <li>Suryabedana</li>
-                        <li>Ujjayi “Victorious”</li>
-                        <li>Bastrika “Bellows of Blacksmith”</li>
-                        <li>Bramari “Humming Bee”</li>
-                        <li>Shitali</li>
-                        <li>Shitkari</li>
-                        <li>Natural Breathing</li>
-                        <li>Abdominal Breathing</li>
-                        <li>Thoracic Breathing</li>
-                        <li>Clavicular Breathing</li>
-                        <li>Full Yogic Breathing</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<section id="classes" class="content">
-    <!--  -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="yoga-sub-heading">Classes</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p>
-                    During COVID, all classes are live on Zoom.
-                </p>
-                <p>
-                    POWER YOGA – Tuesdays, 5:00 PM PST<br/>
-                    BEGINNING YOGA – Wednesdays, 5:00 PM PST<br/>
-                    POWER YOGA – Saturdays, 10:00 AM PST<br/>
-                    CARDIO/ABS/STRENGTH – Sundays, 9:00 AM PST<br/>
-                </p>
-                <p>
-                    Class fees are $20 payable via Zelle or Venmo
+    <section id="about">
+        <!-- Feature Container -->
+        <div class="relative container flex flex-col max-w-6xl mx-auto my-32 px-6 text-gray-900 md:flex-row md:px-0">
+            <!-- Image Container -->
+            <img src="images/about_background_fade.jpg" alt="About Image">
+            <!-- Text Container -->
+            <div class="top-48 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20">
+                <h2 class="max-w-lg mt-10 mb-6 text-4xl font-sans text-center text-gray-900 uppercase md:text-5xl md:mt-0 md:text-left">
+                    About Us
+                </h2>
+                <p class="max-w-md text-center md:text-left">
+                    At Yoga Avani, we believe in the power of yoga to transform lives.
                 </p>
             </div>
         </div>
-    </div>
-</section>
-
-    <section id="testimonials" class="content">
-        <!--  -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="yoga-sub-heading">Testimonials</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>"Way more than just yoga… I began seeing Regina at the recommendation of my therapist, while trying to overcome depression brought on by a death in the family. As a Nurse Practitioner, I knew I needed to exercise in order to improve my mood, but I just couldn’t find the motivation to do it by myself. I went to my initial session with the intent of doing a few sessions with Regina until I could get my motivation and confidence up to do it on my own. However, after my first session, I realized I would be seeing Regina for a very long time to come. Regina’s insight into my depression and grief was almost startling, as I had only shared the basics with her.  She tailors each practice to where I am that day and somehow seems to work out all of that pain and grief in doing so. At the end of my sessions I feel high, and the high lasts for days.  Furthermore, if I’m having trouble getting into a position, she will assist me via massage, support or a little gentle pressure. You won’t get that in any yoga class! I’ve lost 30 pounds with the help and encouragement of Regina and people are now regularly commenting on how great I look. Thank-you, Regina- I am so blessed to have found you." <strong>Chuck Williamson, RN, MS, ANP-BC</strong></p>
-                    <p>I can’t say enough about Regina. After my first class I was hooked to her style of teaching. She doesn’t coddle but instead pushes you to your limits so that true healing is guaranteed to take place. She has instilled in me a permanent love of yoga and pushed my practice to heights I never imagined. She genuinely cares about the comprehensive healing of her students, not just for form and fitness, but mental and spiritual balance. I felt comfortable and receptive to her right from the start. No matter what time or day of the week it is, she emits wonderful positive energy (not in the fluffed up new age spiritual sense either). She’s very real and down to earth with a great sense of humor, never coming from a place of judgment. She’s very attentive to my individual strengths and weaknesses and able to create a long-term program that evolves over time and is never monotonous. Her classes can be very challenging, mixing tricky asanas and multiple adjustments with grueling core exercises that leave you pleasantly exhausted as well as empowered. To top it off, she ends with ancient pranayama breathing techniques that stretch your lung capacity and quiet the mind until you feel a blissful buzzing and balance of being throughout your entire body. Her love of life pushes me to one day attain that same happiness through regular practice. I was a physical and mental wreck when I first met Regina but now I’ve grown to where I’ve tasted the pleasure that comes from confidence, inner peace and balance in all forms of life. My journey has just begun and I cannot wait to see where it leads! Namaste Regina!!  <strong>Macauley</strong></p>
-                    <p>Regina adapts the practice to your level, skill and energy.  She pushes each person to their max when they want it or not or not when they don’t.  She actively corrects form which helps me learn and helps prevent injuries.  Her skill as a yogi and as an instructor are fantastic.  <strong>Vidya D.</strong></p>
-                    <p>"I know Regina as a highly competent and dedicated yoga instructor, but there are many competent yoga instructors.  What made her such a special instructor for me was her capacity to inspire.  When I began meeting with her with her my 63 year-old body was in pain and tied up in knots and I was feeling exhausted, discouraged, and depressed. Very quickly my pain healed and within a few weeks I had the agility of a man twenty-five years younger. But what surprised me the most was how much her optimism renewed my spirit.  I don’t know how she does it, but I do know that she has the same effect on others.  I am a psychotherapist, and have referred some of my most discouraged and depressed clients to her.  In every case her encouraging style has not only healed and strengthened their bodies; it has also enlivened them and given them hope.  One of my patients told me that a session with her “is like a workout and a therapy session rolled into one.  She is now one of my most valued referral resources for patients who need body and energetic work.” <strong>Tom M</strong></p>
-                </div>
-                <div class="col-md-6"></div>
-            </div>
-        </div>
     </section>
 
-    <section id="about" class="content">
-        <!--  -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="yoga-sub-heading">About</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6"></div>
-                <div class="col-md-6">
-                    <p>Yoga entered Regina's life nearly 25 years ago. She is certified by Yoga-India/Abhyasa Yoga Shala, one of the 20 top training centers worldwide by yoga.info, in Mysore, India. After years practicing in San Francisco, she decided to take her yoga studies to a deeper level and traveled to Mysore, India to study with Master Bharat Shetty.</p>
-                    <p>Regina inspires and transforms individuals and groups through movement, chant, prayer and conversation. During COVID she is teaching Zoom live classes in various styles and levels. Along with yoga, Regina creates her own balance by teaching spin and yoga classes, traveling and hanging out with her two pups!</p>
-                    <p>
-                        Contact Info:<br/>
-                        <strong>Please email for additional information</strong><br/>
-                    </p>
-                    <p>YOGAAVANI@YAHOO.COM</p>
-                    <p>(415) 95-AVANI</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <a href="#page-yoga-top" class="page-scroll">
-                        <button class="return-home">^</button>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We offer a variety of yoga classes and wellness programs.</p>
     </section>
 
+    <section id="events">
+        <h2>Upcoming Events</h2>
+    </section>
 
-<footer>
-    <div class="container">
-        <!-- footer content goes here -->
-        Yoga Avani Copyright &copy; 2020
-    </div>
-</footer>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+    </section>
 
-<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!-- Scrolling Nav JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/scrolling-nav.js"></script>
-<script>
-    var meditationAudio = document.getElementById('5-minute-meditation'),
-            ctrl = document.getElementById('audioControl');
-    var audioIcon = document.getElementById('audioIcon');
-    var audioPlayerFlag = document.getElementById('audioPlayerFlag');
-
-    audioIcon.onclick = function () {
-    	console.log('Start or stop audio...');
-
-        // Update the Button
-        var pause = audioPlayerFlag.value === 'pause';
-        var audioTag = audioIcon.className === 'glyphicon glyphicon-volume-up';
-        audioPlayerFlag.value = pause ? 'play' : 'pause';
-        
-        // Update audio icon
-        audioIcon.className = audioTag ? 'glyphicon glyphicon-volume-off' : 'glyphicon glyphicon-volume-up';
-
-        // Update the Audio
-        var method = pause ? 'play' : 'pause';
-        meditationAudio[method]();
-
-        // Prevent Default Action
-        return false;
-    };
-</script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Yoga Avani. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
